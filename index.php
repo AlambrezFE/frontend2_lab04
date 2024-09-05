@@ -31,7 +31,7 @@
                 return await response.json();
             }
 
-            const baseUrl = "http://localhost:5143/api";
+            const baseUrl = "http://localhost:5143/api"; // cambiar aca por la direccion del docker
 
             async function loadAllCourses() {
                 const allCourses = await fetchData(`${baseUrl}/course?limit=10`);
